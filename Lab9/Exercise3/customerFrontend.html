@@ -1,0 +1,58 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type ="text/css"/>
+<script type="text/javascript" src="formChecker.js"></script>
+</head>
+<div class="myHeader">
+        <h1>Royal Flowers</h1>
+      </div>
+<body class = "body">   &numsp;&numsp;&numsp;&numsp;&numsp;
+    <form id = "Myform" action="customerBackend.php" method="post" onsubmit = "return validate();">
+    
+      <br></br>
+      <table>
+        <tr>
+          <th><img id="pink_logo" src="images/pink.png" alt="pink!"></th>
+          <th><img id="daisy_logo" src="images/daisy.png" alt="daisy!"></th>
+          <th><img id="tulips_logo" src="images/tulips.png" alt="tulips!"></th>
+
+        </tr>
+        <tr>
+            <td>Pink Dahlias ($4.00 a bouquet)</td>
+            <td>Daisies ($5.00 a bouquet)</td>
+            <td>Tulips ($10.00 a bouquet)</td>
+        </tr>
+        <tr>
+            <td><label>Amount:</label>
+                <input type="number" name = "Pink" id = "Pink"></td>
+            <td> <label>Amount:</label>
+                <input type="number"name = "Daisies" id = "Daisies"></td>
+            <td> <label>Amount:</label>
+                <input type="number" name = "Tulips"id = "Tulips">    </td>
+        </tr>
+        </table>
+    <br></br>
+    <h1>Login Details: </h1>
+
+    <p>Username:<input type="input" id = "username"></p>
+
+    <p>Password:<input type="password" name = "password" id = "password"></p>
+    <br></br>
+    <h1>Shipping Options: </h1>
+	
+    <p for="Free">
+    <input type="radio" value = "Free" id = "free_shipping" name = "shipping"unchecked>
+    Free: 7 days</p>
+	<p for="Overnight">
+    <input type="radio" value = "Overnight" id = "overnight_shipping"name = "shipping" unchecked>
+    $50.00: Overnight</p>
+<p for = "threeDay">
+    <input type="radio" value = "threeDay" id = "threeDay_shipping" name = "shipping"unchecked>
+   	$5.00: three days</p>
+    
+    <button onclick= "reset();">Reset</button>
+    <button onclick= "validate();">Login</button>
+</form>
+</body>
+
+</html>
